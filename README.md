@@ -2,7 +2,9 @@
 
 ## How to use
 
-Just make a POST request in your code to `/api/invite`. Required parameters are `key`, `email`, and `name`.
+Just make a POST request to `/api/invite`. Required parameters are `key`, `email`, and `name`.
+
+The `key` is available in the Hack Club 1Password. If you don't have access to 1Password but need the key, DM `@matthew`.
 
 By default, the user will be invited as a multi-channel guest in in `#lobby`. If you want to make them a full member and also invite them to another channel (for example, if they're a club leader), you can add the optional parameters `fullmember: true` and `channel`.
 
@@ -14,7 +16,7 @@ By default, the user will be invited as a multi-channel guest in in `#lobby`. If
 fetch('https://slack-invite-service.hackclub.dev/api/invite', {
   method: 'POST',
   body: JSON.stringify({
-    key: process.env.KEY, // available in the Hack Club 1Password. If you're a community member and need access, ask @matthew for the key
+    key: process.env.KEY,
     email: 'toad@hackclub.com',
     name: 'Toad NoLastName'
   })
