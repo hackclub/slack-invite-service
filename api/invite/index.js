@@ -1,6 +1,9 @@
+import fetch from 'node-fetch'
+
 export default async (req, res) => {
   // params: key, email, name, fullmember, channel
 
+  console.log(req)
   const data = req.body
   console.log(data)
   if (!data.key) {
