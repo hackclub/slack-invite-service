@@ -1,0 +1,14 @@
+{
+  "name": "slack-invite-service",
+  "version": "1.0.0",
+  "description": "a microservice that invites users to the hack club slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MatthewStanciu",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  }
+}
