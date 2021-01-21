@@ -3,7 +3,6 @@ import fetch from 'node-fetch'
 export default async (req, res) => {
   // params: key, email, name, fullmember, channel
 
-  console.log(req)
   const data = req.body
   console.log(data)
   if (!data.key) {
@@ -17,7 +16,7 @@ export default async (req, res) => {
     let params
     if (data.fullmember) {
       params = [
-        `email:${data.email}`,
+        `email=${data.email}`,
         `token=${process.env.SLACK_LEGACY_TOKEN}`,
         `real_name=${data.name}`,
         `restricted=false`,
