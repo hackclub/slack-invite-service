@@ -4,7 +4,7 @@ export default async (req, res) => {
   // params: key, email, name, fullmember, channel
 
   const data = req.body
-  console.log(data)
+
   if (!data.key) {
     return res.status(403).json({ error: `You must include a key. It's called "Slack invite service key" in 1Password`})
   }
