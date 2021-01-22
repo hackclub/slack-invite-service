@@ -2,7 +2,7 @@
 
 ## How to use
 
-Just make a POST request to `/api/invite`. Required parameters are `key`, `email`, and `name`.
+Make a POST request to `/api/invite`. Required parameters are `key`, `email`, and `name`.
 
 The `key` is available in the Hack Club 1Password. If you don't have access to 1Password but need the key, DM `@matthew`.
 
