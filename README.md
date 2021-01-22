@@ -20,7 +20,7 @@ fetch('https://slack-invite-service.hackclub.dev/api/invite', {
     email: 'toad@hackclub.com',
     name: 'Toad NoLastName'
   })
-}).then (r => r.json())
+}).then(r => r.json())
 ```
 
 ### Full member
